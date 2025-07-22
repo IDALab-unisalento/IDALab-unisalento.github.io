@@ -19,7 +19,7 @@ layout: landing
 									</header>
 									<div class="row projects-container">
 										{% if site.categories.iotprojects %}
-											{% assign projects = site.categories.iotprojects | sort: 'title' | reverse  %}
+											{% assign projects = site.categories.iotprojects | sort: 'date' | reverse  %}
 											{% if projects and projects != empty %}
 												{% assign index = 0 %}
 												{% for project in projects %}
